@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* =================== Generales ================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.5px;
+}
+
+/* =================== Cabezero ================== */
+
+.navbar-pinterest {
+    
+    display: flex;
+    background-color: white;
+    padding: 0px 20px 3px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    border: 30px;
+}
+
+.navbar-pinterest nav{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding-top: 10px;
+    gap: 3px;
+    position: relative;
+    padding-right: 18px;
+    
+}
+
+.navbar-pinterest .nav-derecho{  
+    gap: 13px;
+}
+
+.navbar-pinterest div{
+    display: flex;
+    margin: 8px;
+    
+}
+
+.navbar-pinterest #notifications, #message, #profile-img{
+    scale: 1.35;
+}
+
+.btn-inicio{
+    padding: 15px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+.icon-zoom{
+    position:absolute;
+    scale:1;
+    left:2%;
+    top: 44%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.finder {
+    background-color: rgb(235, 233, 233);
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    width: 1360px;
+    font-size: 14.5px;
+}
+
+.navbar-pinterest:hover .icon-zoom{
+    
+    display: none;
+    
+}
+
+
+/* =================== Main ================== */
+
+.content{
+    margin-top: 23px;
+    padding: 60px;
+    columns: 7;
+    
+}
+
+
+.card-image {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    scale: 0.99;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.8%);
+    border-radius: 20px;
+    cursor: zoom-in;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* =================== Botones ================== */
+
+.overlay .boton1{
+    background-color: #e60023;
+    color: #fff;
+    padding: 16px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    position : absolute;
+    top: 4%;
+    right: 6%;
+    cursor: pointer;
+} 
+
+.overlay .boton2{
+    background-color: rgb(209, 209, 209);
+    padding: 5px 7.2px;
+    border: none;
+    border-radius: 50%;
+    scale: 1.2;
+    position: absolute;
+    bottom: 5%;
+    right: 23%;
+    cursor: pointer;
+
+}
+
+.overlay .boton3{
+    background-color: rgb(209, 209, 209);
+    padding: 5px 7.2px;
+    border: none;
+    border-radius: 50%;
+    scale: 1.2;
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    cursor: pointer;
+
+}
+
+/* =================== Media Querys ================== */
+
+@media screen and (max-width: 600px) {
+    #navbar-pinterest {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .finder,
+    #notifications,
+    #message,
+    #profile-img {
+        margin: 10px 0;
+    }
+}
