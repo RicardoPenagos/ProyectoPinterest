@@ -123,6 +123,7 @@ body {
     transform: translateY(-0.8%);
     border-radius: 20px;
     cursor: zoom-in;
+    
 }
 
 .overlay:hover {
@@ -172,16 +173,86 @@ body {
 
 /* =================== Media Querys ================== */
 
-@media screen and (max-width: 600px) {
-    #navbar-pinterest {
-        flex-direction: column;
-        align-items: flex-start;
+@media screen and (max-width: 1440px) {
+    
+    .content{
+        columns: 5; 
     }
 
-    .finder,
-    #notifications,
-    #message,
-    #profile-img {
-        margin: 10px 0;
+    .finder {  
+        width: 700px;   
+    }
+
+    .icon-zoom{
+        
+        left:4%;
+        
     }
 }
+
+@media screen and (max-width: 1100px) {
+    
+    .content{
+        columns: 3; 
+    }
+
+    .finder {  
+        width: 300px;   
+    }
+
+    .icon-zoom{
+        
+        left:8%;
+        
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .navbar-pinterest {
+        flex-wrap: wrap;
+    }
+
+    .navbar-pinterest nav{
+  
+        flex-wrap: wrap;       
+    }
+    .content{
+        columns: 2; 
+    }
+
+    .finder {  
+        width: 120px;   
+    }
+
+    .icon-zoom{
+        
+        left:14%;
+        
+    }
+}
+
+@media screen and (max-width: 460px) {
+    
+    .navbar-pinterest {
+        flex-wrap: wrap;
+    }
+
+    .navbar-pinterest nav{
+  
+        flex-wrap: wrap;       
+    }
+
+    .content{
+        columns: 1; 
+    }
+
+    .finder {  
+       display: none;   
+    }
+
+}
+
+
+
