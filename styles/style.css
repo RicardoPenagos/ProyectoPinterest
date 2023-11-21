@@ -12,6 +12,7 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 16.5px;
+    min-width: 300px;
 }
 
 /* =================== Cabezero ================== */
@@ -28,6 +29,7 @@ body {
     align-items: center;
     z-index: 2;
     border: 30px;
+    min-width: 300px;
 }
 
 .navbar-pinterest nav{
@@ -173,6 +175,19 @@ body {
 
 /* =================== Media Querys ================== */
 
+@media screen and (max-width: 1650px) {
+    
+    .content{
+        columns: 6; 
+    }
+
+    .finder {  
+        width: 1000px;   
+    }
+
+    
+}
+
 @media screen and (max-width: 1440px) {
     
     .content{
@@ -237,6 +252,7 @@ body {
     
     .navbar-pinterest {
         flex-wrap: wrap;
+        
     }
 
     .navbar-pinterest nav{
@@ -246,6 +262,7 @@ body {
 
     .content{
         columns: 1; 
+        
     }
 
     .finder {  
