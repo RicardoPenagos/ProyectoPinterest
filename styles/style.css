@@ -51,6 +51,7 @@ body {
 .navbar-pinterest div{
     display: flex;
     margin: 8px;
+    cursor:pointer;
     
 }
 
