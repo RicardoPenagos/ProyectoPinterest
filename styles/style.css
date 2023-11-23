@@ -51,7 +51,7 @@ body {
 .navbar-pinterest div{
     display: flex;
     margin: 8px;
-    
+    cursor: pointer;
 }
 
 .navbar-pinterest #notifications, #message, #profile-img{
