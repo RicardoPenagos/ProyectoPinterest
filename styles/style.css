@@ -44,18 +44,24 @@ body {
     
 }
 
-.navbar-pinterest .nav-derecho{  
-    gap: 13px;
-}
-
 .navbar-pinterest div{
     display: flex;
     margin: 8px;
     cursor: pointer;
 }
 
+#pinterest-icon{
+    padding: 9px;
+    border-radius: 50%;
+}
+
 .navbar-pinterest #notifications, #message, #profile-img{
     scale: 1.35;
+    padding: 7px;
+    border-radius: 50%;
+}
+.navbar-pinterest #notifications:hover, #message:hover, #profile-img:hover, #pinterest-icon:hover{
+    background-color: rgb(236, 234, 234);
 }
 
 .btn-inicio{
@@ -196,7 +202,7 @@ body {
     
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1480px) {
     
     .content{
         columns: 5; 
@@ -211,6 +217,15 @@ body {
         left:4%;
         
     }
+}
+
+@media screen and (max-width: 1250px) {
+    
+   
+    .finder {  
+        width: 500px;   
+    }
+
 }
 
 @media screen and (max-width: 1100px) {
